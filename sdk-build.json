@@ -1,0 +1,24 @@
+{
+  "language": "ruby",
+  "build": [
+    [
+      "bundle",
+      "install"
+    ],
+    [
+      "bundle",
+      "exec",
+      "ruby",
+      "-Ilib",
+      "-e",
+      "require \"allscreenshots\""
+    ]
+  ],
+  "run": [
+    "bundle",
+    "exec",
+    "ruby",
+    "-Ilib",
+    "sample-app/worker.rb"
+  ]
+}
