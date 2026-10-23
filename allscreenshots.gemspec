@@ -22,11 +22,16 @@ Gem::Specification.new do |s|
   s.authors     = ["Allscreenshots"]
   s.email       = ["support@allscreenshots.com"]
   s.homepage    = "https://allscreenshots.com"
-  s.summary     = "Allscreenshots public API Ruby Gem"
+  s.summary     = "Official Ruby SDK for the Allscreenshots screenshot API"
   s.description = "Capture websites, manage jobs, compose images, schedule captures, crawl sites, and read usage."
   s.license     = "Apache-2.0"
   s.required_ruby_version = ">= 3.3"
-  s.metadata    = {}
+  s.metadata    = {
+    "homepage_uri"          => "https://allscreenshots.com",
+    "documentation_uri"     => "https://docs.allscreenshots.com",
+    "source_code_uri"       => "https://github.com/allscreenshots/allscreenshots-sdk-ruby",
+    "bug_tracker_uri"       => "https://github.com/allscreenshots/allscreenshots-sdk-ruby/issues"
+  }
 
   s.add_runtime_dependency 'faraday', '>= 1.0.1', '< 3.0'
   s.add_runtime_dependency 'faraday-multipart'
